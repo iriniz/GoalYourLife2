@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GoalYourLife | Create Account</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="behaviour">
+      <p id="mouse_clicks">Number of mouse clicks: 0</p>
+      <p id="time_spent">Total time spent: None</p>
+      <p id="key_presses">Total key presses: 0</p>
+      <p id="characters_typed">Total number of characters typed: 0</p>
+    </div>
+  
+    <header>
+       <p id="title">GoalYourLife</p>
+       <p id="user">User: signed out</p>
+    </header>
+    
+    <h1> Create Account </h1>
+    <script> 
+      document.querySelector(".behaviour").style.display = "none";
+      var clicks = 0;
+      var key = 0;
+      var typed = 0;
+      window.addEventListener('click', (event) => {
+      clicks++;
+      document.getElementById("mouse_clicks").innerHTML = "Number of mouse clicks: " + clicks;})
+      window.addEventListener('keydown', (event) => {
+      key++;
+      document.getElementById("key_presses").innerHTML = "Total key presses: " + key;})
+      document.addEventListener('input', (event) => {
+      typed++;
+      document.getElementById("characters_typed").innerHTML = "Total number of characters typed: " + typed;})
+    </script>
+    <script type="text/javascript" src="track_behaviour.js"></script>
+    <script type="text/javascript" src="signup.js"></script>
+    <form name="signup_form" action="menu.html" onclick="return check_fields()">
+      <label for="username">Username:<span class="asterisk">*</span></label><br>
+      <input type="text" name="username" id="username"><br>
+	  <label for="username" class="js-feedback"></label><br>
+      <label for="password">Password:<span class="asterisk">*</span></label><br>
+      <input type="password"  name="password"  id="password"><br>
+	  <label for="password" class="js-feedback"></label><br>
+      <label for="name">Full Name:<span class="asterisk">*</span></label><br>
+      <input type="text" name="name" id="name"><br>
+	  <label for="name" class="js-feedback"></label><br>
+      <label for="street">Address:</label><br>
+      <label for="street" class="minilabel">street and house</label>
+      <input type="text" name="street" id="street"><br>
+      <label for="city" class="minilabel">city</label>
+      <input type="text" name="city" id="city"><br>
+      <label for="postcode" class="minilabel">postcode<span class="asterisk">*</span></label>
+      <input type="text" name="postcode" id="postcode"><br>
+      <label for="country" class="minilabel">country<span class="asterisk">*</span></label>
+      <input type="text" name="country" id="country"><br>
+	  <label for="postcode" class="js-feedback"></label><br>
+      <label for="sex">Sex:<span class="asterisk">*</span></label><br>
+      <select name="sex" id="sex">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+      </select><br>
+      <label for="language">Language:<span class="asterisk">*</span></label><br>
+      <select name="language" id="language"><br>
+        <option value="English">English</option>
+        <option value="Nederlands">Nederlands</option>
+      </select><br>
+	  <label for="email">E-mail<span class="asterisk">*</span></label><br>
+	  <input type="text" name="email" id="email"><br>
+	  <label for="email" class="js-feedback"></label><br>
+      <label for="bio">About/bio:</label><br>
+      <input type="text" name="bio" id="bio"><br>
+      <input type="submit" value="Create Account" onclick="return end()">
+    </form>
+    <a role="button" class="big-button" href="index.html"> Cancel </a>
+    
+     <footer>
+         <p>Created by Eirini and Lucas</p>
+     </footer>
+     
+  </body>
+</html>

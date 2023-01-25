@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GoalYourLife | Goal Details</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <header>
+       <p id="title">GoalYourLife</p>
+       <p id="user">User: Example</p>
+    </header>
+  
+    <h1> Goal Details </h1>
+    
+    <h3> Example goal 1 </h3>
+    <p> Goal Description </p>
+    <p> Due 01/01/2025 </p>
+    
+    <table>
+        <tbody>
+           <tr>
+               <th>Target 1 (Numeric)</th>
+           </tr>
+           <tr>
+               <form id="target1">
+                   <td> 
+                       Target Description <br>
+                       Target: 50 <br>
+                       Progress: <input type="number" name="number" min="0" step="1" value="30">
+                   </td>
+                   <td>
+                       <input type="submit" value="Update" class="small-button">
+                   </td>
+               </form>
+           </tr>
+       </tbody>
+    </table>
+    
+    <table>
+        <tbody>
+           <tr>
+               <th>Target 2 (Boolean)</th>
+           </tr>
+           <tr>
+               <form id="target2">
+                   <td> 
+                       Target Description <br>
+                       Progress: not completed
+                   </td>
+                   <td>
+                       <input type="submit" value="Toggle" class="small-button">
+                   </td>
+               </form>
+           </tr>
+       </tbody>
+    </table>
+    
+    <table>
+        <tbody>
+           <tr>
+               <th>Target 3 (Monetary)</th>
+           </tr>
+           <tr>
+               <form id="target3">
+                   <td> 
+                       Target Description <br>
+                       Target: $200.00 <br>
+                       Progress: <input type="number" name="number" min="0" step="0.01" value="39.95">
+                   </td>
+                   <td>
+                       <input type="submit" value="Update" class="small-button">
+                   </td>
+               </form>
+           </tr>
+       </tbody>
+    </table>
+    
+    <table>
+        <tbody>
+           <tr>
+               <th>Target 4 (Task-based)</th>
+           </tr>
+           <tr>
+               <form id="target4">
+                   <td> 
+                       Target Description <br>
+                       Progress: <input type="text" name="tasktext">
+                   </td>
+                   <td>
+                       <input type="submit" value="Update" class="small-button">
+                   </td>
+               </form>
+           </tr>
+       </tbody>
+    </table>
+    
+    <a class="big-button" href="addtarget.html">Add a Target</a>
+    <a class="big-button" href="goals.html">Return</a>
+    
+    <footer>
+        <p>Created by Eirini and Lucas</p>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GoalYourLife | Add a Target</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <header>
+       <p id="title">GoalYourLife</p>
+       <p id="user">User: Example</p>
+    </header>
+  
+    <h1> Add a Target </h1>
+    
+    <form action="goaldetails.html">
+    
+        <label for="type">Choose a type</label>
+        <select name="type" id="type">
+            <option value="numeric">Numeric</option>
+            <option value="one-time">Boolean</option>
+            <option value="limit">Monetary</option>
+            <option value="other">Task-related</option>
+        </select><br><br>
+        
+        <label for="description">Target Description</label>
+        <input type="text" name="description" id="description"><br><br>
+        
+        <label for="target">Target</label>
+        <input type="number" name="target" id="target"><br><br>
+        <input type="submit" value="Submit"> 
+    </form>
+    
+    <a class="big-button" href="goaldetails.html"> Cancel </a>
+    
+    <footer>
+        <p>Created by Eirini and Lucas</p>
+    </footer>
+    
+  </body>
+</html>
